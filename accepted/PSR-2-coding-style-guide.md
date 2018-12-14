@@ -1,5 +1,4 @@
-Coding Style Guide
-==================
+# Coding Style Guide
 
 This guide extends and expands on [PSR-1], the basic coding standard.
 
@@ -21,9 +20,7 @@ interpreted as described in [RFC 2119].
 [PSR-0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 [PSR-1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 
-
-1. Overview
------------
+## 1. Overview
 
 - Code MUST follow a "coding style guide" PSR [[PSR-1]].
 
@@ -86,8 +83,7 @@ class Foo extends Bar implements FooInterface
 }
 ~~~
 
-2. General
-----------
+## 2. General
 
 ### 2.1. Basic Coding Standard
 
@@ -135,10 +131,7 @@ The PHP constants `true`, `false`, and `null` MUST be in lower case.
 
 [keywords]: http://php.net/manual/en/reserved.keywords.php
 
-
-
-3. Namespace and Use Declarations
----------------------------------
+## 3. Namespace and Use Declarations
 
 When present, there MUST be one blank line after the `namespace` declaration.
 
@@ -163,9 +156,7 @@ use OtherVendor\OtherPackage\BazClass;
 
 ~~~
 
-
-4. Classes, Properties, and Methods
------------------------------------
+## 4. Classes, Properties, and Methods
 
 The term "class" refers to all classes, interfaces, and traits.
 
@@ -361,8 +352,7 @@ $foo->bar(
 );
 ~~~
 
-5. Control Structures
----------------------
+## 5. Control Structures
 
 The general style rules for control structures are as follows:
 
@@ -377,7 +367,6 @@ The general style rules for control structures are as follows:
 The body of each structure MUST be enclosed by braces. This standardizes how
 the structures look, and reduces the likelihood of introducing errors as new
 lines get added to the body.
-
 
 ### 5.1. `if`, `elseif`, `else`
 
@@ -398,7 +387,6 @@ if ($expr1) {
 
 The keyword `elseif` SHOULD be used instead of `else if` so that all control
 keywords look like single words.
-
 
 ### 5.2. `switch`, `case`
 
@@ -427,7 +415,6 @@ switch ($expr) {
         break;
 }
 ~~~
-
 
 ### 5.3. `while`, `do while`
 
@@ -491,8 +478,7 @@ try {
 }
 ~~~
 
-6. Closures
------------
+## 6. Closures
 
 Closures MUST be declared with a space after the `function` keyword, and a
 space before and after the `use` keyword.
@@ -597,9 +583,7 @@ $foo->bar(
 );
 ~~~
 
-
-7. Conclusion
---------------
+## 7. Conclusion
 
 There are many elements of style and practice intentionally omitted by this
 guide. These include but are not limited to:
@@ -621,16 +605,14 @@ guide. These include but are not limited to:
 Future recommendations MAY revise and extend this guide to address those or
 other elements of style and practice.
 
-
-Appendix A. Survey
-------------------
+## Appendix A. Survey
 
 In writing this style guide, the group took a survey of member projects to
 determine common practices.  The survey is retained herein for posterity.
 
 ### A.1. Survey Data
 
-    url,http://www.horde.org/apps/horde/docs/CODING_STANDARDS,http://pear.php.net/manual/en/standards.php,http://solarphp.com/manual/appendix-standards.style,http://framework.zend.com/manual/en/coding-standard.html,http://symfony.com/doc/2.0/contributing/code/standards.html,http://www.ppi.io/docs/coding-standards.html,https://github.com/ezsystems/ezp-next/wiki/codingstandards,http://book.cakephp.org/2.0/en/contributing/cakephp-coding-conventions.html,https://github.com/UnionOfRAD/lithium/wiki/Spec%3A-Coding,http://drupal.org/coding-standards,http://code.google.com/p/sabredav/,http://area51.phpbb.com/docs/31x/coding-guidelines.html,https://docs.google.com/a/zikula.org/document/edit?authkey=CPCU0Us&hgd=1&id=1fcqb93Sn-hR9c0mkN6m_tyWnmEvoswKBtSc0tKkZmJA,http://www.chisimba.com,n/a,https://github.com/Respect/project-info/blob/master/coding-standards-sample.php,n/a,Object Calisthenics for PHP,http://doc.nette.org/en/coding-standard,http://flow3.typo3.org,https://github.com/propelorm/Propel2/wiki/Coding-Standards,http://developer.joomla.org/coding-standards.html
+    url,http://www.horde.org/apps/horde/docs/CODING_STANDARDS,http://pear.php.net/manual/en/standards.php,http://solarphp.com/manual/appendix-standards.style,http://framework.zend.com/manual/en/coding-standard.html,https://symfony.com/doc/2.0/contributing/code/standards.html,http://www.ppi.io/docs/coding-standards.html,https://github.com/ezsystems/ezp-next/wiki/codingstandards,http://book.cakephp.org/2.0/en/contributing/cakephp-coding-conventions.html,https://github.com/UnionOfRAD/lithium/wiki/Spec%3A-Coding,http://drupal.org/coding-standards,http://code.google.com/p/sabredav/,http://area51.phpbb.com/docs/31x/coding-guidelines.html,https://docs.google.com/a/zikula.org/document/edit?authkey=CPCU0Us&hgd=1&id=1fcqb93Sn-hR9c0mkN6m_tyWnmEvoswKBtSc0tKkZmJA,http://www.chisimba.com,n/a,https://github.com/Respect/project-info/blob/master/coding-standards-sample.php,n/a,Object Calisthenics for PHP,http://doc.nette.org/en/coding-standard,http://flow3.typo3.org,https://github.com/propelorm/Propel2/wiki/Coding-Standards,http://developer.joomla.org/coding-standards.html
     voting,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,no,no,?,yes,no,yes
     indent_type,4,4,4,4,4,tab,4,tab,tab,2,4,tab,4,4,4,4,4,4,tab,tab,4,tab
     line_length_limit_soft,75,75,75,75,no,85,120,120,80,80,80,no,100,80,80,?,?,120,80,120,no,150
